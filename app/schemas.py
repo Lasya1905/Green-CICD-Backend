@@ -7,6 +7,7 @@ from datetime import datetime
 
 # ---------- REQUEST SCHEMAS ----------
 
+# These schemas define the structure of incoming data for various API endpoints. They are used for validation and parsing of request payloads.
 class ProjectCreate(BaseModel):
     project_name: str
     repo_url: str
@@ -21,6 +22,8 @@ class PipelineRunCreate(BaseModel):
 
 
 # ---------- RESPONSE SCHEMAS ----------
+
+# These schemas define the structure of outgoing data for various API endpoints. They are used for serialization of response payloads.
 
 class ProjectResponse(BaseModel):
     id: UUID
