@@ -6,6 +6,8 @@ from .database import Base
 
 # ---------- DATABASE MODELS ----------
 # These models represent the database tables and their relationships. They are used by SQLAlchemy to interact with the PostgreSQL database.
+
+
 class User(Base):
     __tablename__ = "users"
 
